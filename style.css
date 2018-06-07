@@ -99,6 +99,16 @@ p.thanks {
 	font-style: italic;
 	padding-top: 3em;
 	}
+.social i {
+	padding: .1em .1em 0 .1em;
+}
+.social p {
+	display: inline-block;
+	color: #346bff;
+	font-weight: 700;
+	font-size: 1.8em;
+	padding-right: .3em;
+}
 .card {
 	background-color: #346bff;
 	margin: 1em 1em 0 1em;
