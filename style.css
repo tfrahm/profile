@@ -169,10 +169,13 @@ p.thanks {
 .card:hover:before {
 	visibility: hidden;
 	}
-figcaption h1 {
+figcaption h2 {
 	font-family: "Kalam", serif;
 	font-size: 3.7em;
 	font-weight: 400;
+	color: white;
+	padding-top: 0;
+	text-transform: none;
 	}
 figcaption p {
 	padding: 0 1em 1em 1em;
@@ -181,16 +184,16 @@ figcaption p {
 	font-family: "Muli", serif;
 	visibility: hidden;
 	}
-.card:first-child h1 {
+.card:first-child h2 {
 	transform: translate(0,.3em) rotate(-5deg);
 	}
-.card:nth-child(2) h1 {
+.card:nth-child(2) h2 {
 	transform: translate(0,.2em) rotate(2deg);
 	}
-.card:nth-child(3) h1 {
+.card:nth-child(3) h2 {
 	transform: translate(0,.4em);
 	}
-.card:nth-child(4) h1{
+.card:nth-child(4) h2 {
 	transform: rotate(-3deg);
 	}
 .decorated{
@@ -420,13 +423,13 @@ header, footer, aside, nav, main, article, figure {
 	.card:nth-child(4) {
 		transform: rotate(-1deg);
 		}
-	.card:first-child h1, .card:nth-child(2) h1, .card:nth-child(3) h1, .card:nth-child(4) h1 {
+	.card:first-child h2, .card:nth-child(2) h2, .card:nth-child(3) h2, .card:nth-child(4) h2 {
 		transform: none;
 		}
 	.card figcaption {
 		top: 15%;
 		}
-	figcaption h1 {
+	figcaption h2 {
 		font-size: 3.5em;
 		}
 	figcaption p {
