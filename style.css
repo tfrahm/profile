@@ -320,10 +320,10 @@ figcaption p {
 	opacity: 1;
 	}
 .lightwidget-widget	{
-	width:100%;
+	width:90%;
 	border:0;
 	overflow:hidden;
-	margin: auto;
+	margin: 1.5em;
 	}
 .widget:first-child {
 	visibility: hidden;
@@ -448,6 +448,7 @@ header, footer, aside, nav, main, article, figure {
 		}
 	.lightwidget-widget	{
 		margin: 1em 0 1em 0;
+		width: 100%;
 		}
 	.decorated > span:before, .decorated > span:after {
 		margin: 0 .5em;
