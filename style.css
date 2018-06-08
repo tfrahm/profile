@@ -320,7 +320,7 @@ figcaption p {
 	opacity: 1;
 	}
 .lightwidget-widget	{
-	max-width:100%;
+	width:100%;
 	border:0;
 	overflow:hidden;
 	margin: auto;
