@@ -180,7 +180,7 @@ figcaption p {
 	font-weight: 200;
 	font-family: "Muli", serif;
 	visibility: hidden;
-}
+	}
 .card:first-child h1 {
 	transform: translate(0,.3em) rotate(-5deg);
 	}
@@ -189,7 +189,7 @@ figcaption p {
 	}
 .card:nth-child(3) h1 {
 	transform: translate(0,.4em);
-}
+	}
 .card:nth-child(4) h1{
 	transform: rotate(-3deg);
 	}
@@ -304,11 +304,11 @@ figcaption p {
 	width:100%; 
 	border:.15em solid black; 
 	border-radius: .2em;
-}
+	}
 .w3-content {
 	margin: auto; 
 	margin-top:.5em;
-}
+	}
 .i-card i {
 	color: white;
 	position: absolute;
@@ -320,14 +320,14 @@ figcaption p {
 	opacity: 1;
 	}
 .lightwidget-widget	{
-	width:100%;
+	max-width:100%;
 	border:0;
 	overflow:hidden;
-	margin: 1em;
+	margin: auto;
 	}
 .widget:first-child {
 	visibility: hidden;
-}
+	}
 a {
 	text-decoration: none;
     }
