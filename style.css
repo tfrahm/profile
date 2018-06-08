@@ -171,7 +171,7 @@ p.thanks {
 	}
 figcaption h1 {
 	font-family: "Kalam", serif;
-	font-size: 3.5em;
+	font-size: 3.7em;
 	font-weight: 400;
 	}
 figcaption p {
@@ -182,10 +182,10 @@ figcaption p {
 	visibility: hidden;
 }
 .card:first-child h1 {
-	transform: rotate(-5deg);
+	transform: translate(0,.3em) rotate(-5deg);
 	}
 .card:nth-child(2) h1 {
-	transform: translate(0,.2em) rotate(1deg);
+	transform: translate(0,.2em) rotate(2deg);
 	}
 .card:nth-child(3) h1 {
 	transform: translate(0,.4em);
@@ -325,6 +325,9 @@ figcaption p {
 	overflow:hidden;
 	margin: 1em;
 	}
+.widget:first-child {
+	visibility: hidden;
+}
 a {
 	text-decoration: none;
     }
@@ -407,22 +410,24 @@ header, footer, aside, nav, main, article, figure {
 		}
 	.card:first-child {
 		transform: rotate(-1deg); 
-		text-transform: none;
 		}
 	.card:nth-child(2) {
 		transform: translate(.25em, -.2em) rotate(1deg);
-		text-transform: none;
 		}
 	.card:nth-child(3) {
 		transform: translate(-.2em)
-		text-transform: none;
 		}
 	.card:nth-child(4) {
 		transform: rotate(-1deg);
-		text-transform: none;
+		}
+	.card:first-child h1, .card:nth-child(2) h1, .card:nth-child(3) h1, .card:nth-child(4) h1 {
+		transform: none;
 		}
 	.card figcaption {
 		top: 15%;
+		}
+	figcaption h1 {
+		font-size: 3.5em;
 		}
 	figcaption p {
 		visibility: visible;
