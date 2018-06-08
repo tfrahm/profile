@@ -119,11 +119,12 @@ p.thanks {
 	position: relative;
 	min-width: 15em;
 	text-align: right;
-	opacity: 1
+	opacity: .8
 	}
 .card:hover {
 	box-shadow: .1em .25em .5em 0 #d9d9d9, .25em .25em .5em 0 #d9d9d9;
     transition: box-shadow .1s;
+    opacity: 1;
 	}
 .card img {
 	max-width: 100%;
@@ -131,8 +132,13 @@ p.thanks {
 	margin: 0;
 	display: flex;
 	overflow: hidden;
-	opacity: .2;
+	visibility: hidden;
+	opacity: 1;
 	}
+.card:hover img {
+	visibility: visible;
+	opacity: 1;
+		}
 .card figcaption { 
 	color: white;
 	position: absolute;
@@ -143,6 +149,25 @@ p.thanks {
 	text-align: center;
 	padding: 0;
 	opacity: 1;
+	}
+.card:hover figcaption {
+	opacity: 0;
+	}
+.card:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-style: solid;
+    display: block;
+    width: 0;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.2), -1px 1px 1px rgba(0,0,0,0.2);
+    border-width: 1.2em;
+    border-color: #fff #fff transparent transparent;
+	background: #2750bf;
+	}
+.card:hover:before {
+	visibility: hidden;
 	}
 figcaption h1 {
 	font-family: "Kalam", serif;
@@ -156,6 +181,18 @@ figcaption p {
 	font-family: "Muli", serif;
 	visibility: hidden;
 }
+.card:first-child h1 {
+	transform: rotate(-5deg);
+	}
+.card:nth-child(2) h1 {
+	transform: translate(0,.2em) rotate(1deg);
+	}
+.card:nth-child(3) h1 {
+	transform: translate(0,.4em);
+}
+.card:nth-child(4) h1{
+	transform: rotate(-3deg);
+	}
 .decorated{
      overflow: hidden;
      text-align: center;
@@ -362,39 +399,24 @@ header, footer, aside, nav, main, article, figure {
 		height: 25em;
 		opacity: .8;
 		}
-	.card:hover {
-		opacity: 1;
+	.card:first-child {
+		transform: rotate(-1deg); 
+		text-transform: none;
+		}
+	.card:nth-child(2) {
+		transform: translate(.25em, -.2em) rotate(1deg);
+		text-transform: none;
+		}
+	.card:nth-child(3) {
+		transform: translate(-.2em)
+		text-transform: none;
+		}
+	.card:nth-child(4) {
+		transform: rotate(-1deg);
+		text-transform: none;
 		}
 	.card figcaption {
-		opacity: 1;
 		top: 15%;
-		}
-	.card:hover figcaption {
-		opacity: 0;
-		}
-	.card img {
-		visibility: hidden;
-		opacity: 1;
-		}
-	.card:hover img {
-		visibility: visible;
-		opacity: 1;
-		}
-	.card:before {
-	    content: "";
-	    position: absolute;
-	    top: 0;
-	    right: 0;
-	    border-style: solid;
-	    display: block;
-	    width: 0;
-	    box-shadow: 0 1px 1px rgba(0,0,0,0.2), -1px 1px 1px rgba(0,0,0,0.2);
-	    border-width: 1.2em;
-	    border-color: #fff #fff transparent transparent;
-		background: #2750bf;
-		}
-	.card:hover:before {
-		visibility: hidden;
 		}
 	figcaption p {
 		visibility: visible;
