@@ -101,19 +101,21 @@ p.thanks {
 	}
 .social i {
 	padding: .1em .1em 0 .1em;
-}
+	}
 .social p {
 	display: inline-block;
 	color: #346bff;
 	font-weight: 700;
 	font-size: 1.8em;
 	padding-right: .3em;
-}
-.card {
+	}
+.card figure {	
 	background-color: #346bff;
-	margin: 1em 1em 0 1em;
+	margin: 0;
+	}
+.card {
+	margin: 1em;
 	overflow: hidden;
-	flex: 1 0 35%;
 	padding: 0;
 	overflow: hidden;
 	position: relative;
@@ -176,6 +178,8 @@ figcaption h2 {
 	color: white;
 	padding-top: 0;
 	text-transform: none;
+	line-height: 1.3em;
+	margin-bottom: .5em;
 	}
 figcaption p {
 	padding: 0 1em 1em 1em;
