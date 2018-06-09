@@ -107,7 +107,8 @@ p.thanks {
 	color: #346bff;
 	font-weight: 700;
 	font-size: 1.8em;
-	padding-right: .3em;
+	padding-right: .3em; 
+	margin-right: 0;
 	}
 .card figure {	
 	background-color: #346bff;
