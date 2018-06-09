@@ -436,6 +436,10 @@ header, footer, aside, nav, main, article, figure {
 	figcaption h2 {
 		font-size: 3.5em;
 		}
+	.card:first-child figcaption h2, .card:nth-child(2) figcaption h2 {
+		 margin-bottom:.7em; 
+		 margin-top:.2em;
+		}
 	figcaption p {
 		visibility: visible;
 		}
