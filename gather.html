@@ -37,7 +37,7 @@
 			<h3>Interviews</h3>
 				<p>I conducted 8 interviews with a variety of potential users between the ages of 20-30 years old. Of these, three were male and five were female. Their experience with Magic ranged from “I’ve heard of it,” to “I’ve competed in tournaments.”</p>
 				<p>Take a look at the results:</p>
-				<div class="w3-content" style="max-width:90%;">
+				<div class="w3-content w3-display-container" style="max-width:90%;margin-top: 1em;">
 					<img class="mySlides" src="gather_slide1.jpg" style="border: none;" alt="User Interviews">
 					<img class="mySlides" src="gather_slide2.jpg" style="border: none;" alt='"Tell me about your experience with Magic: the Gathering."'>
 					<img class="mySlides" src="gather_slide3.jpg" style="border: none;" alt="Results include keywords like 'friends,'camraderie,' and 'social.'">
@@ -51,13 +51,26 @@
 					<img class="mySlides" src="gather_slide11.jpg" style="border: none;" alt="Responses reference ten different social media websites">
 					<img class="mySlides" src="gather_slide12.jpg" style="border: none;" alt="How Might We... create a digital experience that appeals to a diverse variety of both novice and experienced Magic: the Gathering players, connects them in a welcoming space, and helps to foster a more inclusive community?">
 					<img class="mySlides" src="gather_slide13.jpg" style="border: none;" alt="Gather logo">
+
+   					<button class="w3-button w3-display-left w3-red w3-xlarge w3-padding-small" onclick="plusDivs(-1)">&#10094;</button>
+					<button class="w3-button w3-display-right w3-red w3-xlarge w3-padding-small" onclick="plusDivs(1)">&#10095;</button>
+   				</div>
+   				<br>
 					<div class="w3-center">
-  						<div class="w3-section">
-   							 <button class="w3-button w3-light-grey" onclick="plusDivs(-1)">❮ Prev</button>
-   							<button class="w3-button w3-light-grey" onclick="plusDivs(1)">Next ❯</button>
-  						</div>
-  					</div>
-				</div>
+   						<button class="w3-button demo" onclick="currentDiv(1)">1</button> 
+  						<button class="w3-button demo" onclick="currentDiv(2)">2</button> 
+ 						<button class="w3-button demo" onclick="currentDiv(3)">3</button> 
+ 						<button class="w3-button demo" onclick="currentDiv(4)">4</button> 
+ 						<button class="w3-button demo" onclick="currentDiv(5)">5</button> 
+ 						<button class="w3-button demo" onclick="currentDiv(6)">6</button> 
+ 						<button class="w3-button demo" onclick="currentDiv(7)">7</button> 
+ 						<button class="w3-button demo" onclick="currentDiv(8)">8</button> 
+ 						<button class="w3-button demo" onclick="currentDiv(9)">9</button> 
+ 						<button class="w3-button demo" onclick="currentDiv(10)">10</button> 
+ 						<button class="w3-button demo" onclick="currentDiv(11)">11</button> 
+ 						<button class="w3-button demo" onclick="currentDiv(12)">12</button> 
+ 						<button class="w3-button demo" onclick="currentDiv(13)">13</button>		
+   					</div>
 			<h3>Personas</h3>
 				<p>Based on the participants of the user interviews and research on the Magic: the Gathering community, two personas were developed to represent the target user group. One (Jesse) embodies the current user population and the other (Monica) characterizes new and potential users.</p>
 				<section style="padding: 0;">
@@ -122,22 +135,31 @@
 	</footer>
 
 <script>
-	var slideIndex = 1;
+var slideIndex = 1;
 showDivs(slideIndex);
 
 function plusDivs(n) {
-    showDivs(slideIndex += n);
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
 }
 
 function showDivs(n) {
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-    if (n > x.length) {slideIndex = 1} 
-    if (n < 1) {slideIndex = x.length} ;
-    for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none"; 
-    }
-    x[slideIndex-1].style.display = "block"; 
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-light-grey", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-light-grey";
 }
 </script>
 </body>
