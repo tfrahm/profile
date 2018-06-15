@@ -63,7 +63,11 @@ nav ul li {
     flex-direction: row;
     font-size: 2em;
     }
- .name {
+ nav ul li:first-child {
+	flex-basis: 100%;
+	text-align: center;
+ }
+.name {
 	font-size: 2.1em;
 	font-weight: 300;
 	}
@@ -469,6 +473,10 @@ header, footer, aside, nav, main, article, figure {
 		margin: 1em 0 1em 0;
 		width: 100%;
 		}
+	 nav ul li:first-child {
+		flex-basis: auto;
+		text-align: left;
+ 		}
 	.decorated > span:before, .decorated > span:after {
 		margin: 0 .5em;
 		}}
